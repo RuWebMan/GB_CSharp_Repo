@@ -14,21 +14,57 @@
 // 	918 -> 8
 
 // Задача №1
-Console.Write("Введите число №1: ");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число №2: ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число №1: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число №2: ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-if ((b * b) == a)
-{
-   Console.Write("Первое число является квадратом"); 
-}
-else
-{
-     Console.Write("Первое число не является квадратом"); 
-}
+// if ((b * b) == a)
+// {
+//    Console.Write("Первое число является квадратом"); 
+// }
+// else
+// {
+//      Console.Write("Первое число не является квадратом"); 
+// }
 
-// Задача №2
+// Задача №3
+Console.WriteLine("Да начнутся Голодные игры!!!");
+Console.Write("Введите число от 1 до 7 включительно: ");
+int day = Convert.ToInt32(Console.ReadLine());
+
+if (day == 1)
+{
+   Console.WriteLine("Понедельник");
+}
+else if (day == 2)
+{
+   Console.WriteLine("Вторник");
+}
+else if (day == 3)
+{
+   Console.WriteLine("Среда");
+}
+else if (day == 4)
+{
+   Console.WriteLine("Четверг");
+}
+else if (day == 5)
+{
+   Console.WriteLine("Пятница-развратница");
+}
+else if (day == 6)
+{
+   Console.WriteLine("Суббота");
+}
+else if (day == 7)
+{
+   Console.WriteLine("Воскресенье");
+}
+else 
+{
+   Console.WriteLine("Гражданин, на планете Земля всего 7 дней в неделе.");
+}
 
 
 
