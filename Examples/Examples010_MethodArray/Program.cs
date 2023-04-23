@@ -8,7 +8,7 @@ while (index < n)
     if (array[index] == find)
     {
       Console.WriteLine(index);
-      breake;
+      break;
     }
     index++;
 }
