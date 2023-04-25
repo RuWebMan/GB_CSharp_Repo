@@ -46,13 +46,13 @@ Console.Write("Введите цифру, обозначающую день не
 int num = Convert.ToInt32(Console.ReadLine());
 if (num <= 5 && num != 0)
 {
-    Console.WriteLine($"{num} это рабочий день недели");
+    Console.WriteLine($"{num} это рабочий день недели.");
 }
 else if(num == 6 || num == 7)
 {
-    Console.WriteLine($"{num} это выходной");
+    Console.WriteLine($"{num} это выходной!");
 }
 else
 {
-    Console.WriteLine($"Гражданин,{num} это не день недели");
+    Console.WriteLine($"Гражданин, {num} это не день недели.");
 }
