@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Collections;
+using System.ComponentModel;
+using System;
 // Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 
 // 3, 5 -> 243 (3⁵)
@@ -43,3 +45,27 @@
 // int a = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine($"Сумма цифр в числе {a}  = {SumMethod(a)}");
 
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+// 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
+// 6, 1, 33 -> [6, 1, 33]
+
+void CreateArrayMethod(int[] array)
+{
+    
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"Введите элемент массива {i}: ");
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    
+}
+void PrintArrayMethod(int[] array){
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]}; ");
+    }
+}
+
+int[] array = new int[8];
+CreateArrayMethod(array);
+PrintArrayMethod(array);
