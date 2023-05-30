@@ -4,28 +4,18 @@
 // 5 -2 33 -2
 // 77 3 8 1
 
-void CreateArrayMethod(int[] array)
+void CreateArrayMethod(int[,] arr)
 {
-    for (int i = 0; i < newMatrix.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i++)
     {
-        for (int j = 0; j < newMatrix.GetLength(1); j++)
+        for (int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"{newMatrix[i, j]} ");
+            arr[i, j] = new Random().Next(0, 100);
         }
-        Console.WriteLine();
     }
 }
 
-void PrintArrayMethod(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"{array[i]}, ");
-    }
-    Console.WriteLine();
-}
-
-void PrintArray(int[,] arr)
+void PrintArrayMethod(int[,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -38,10 +28,10 @@ void PrintArray(int[,] arr)
 }
 
 Console.Write("Введите число M: ");
-int row = InputNumber();
+int row = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число N: ");
-int colums = InputNumber();
+int colums = Convert.ToInt32(Console.ReadLine());
 
 int[,] array = new int[row, colums];
-CraeteArray(array);
-PrintArray(array);
+CreateArrayMethod(array);
+PrintArrayMethod(array);
