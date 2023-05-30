@@ -1,5 +1,6 @@
 {
     "cSpell.enableFiletypes": [
         "!csharp"
-    ]
+    ],
+    "editor.formatOnSave": true
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+
 // Двумерные массивы.
 
 //string[,] table = new string[2, 3]; // первая — строки, вторая — столбцы. Двумерный массив чисел.
@@ -7,6 +8,7 @@
 // Работа с таблицей строк.
 
 string[,] newTable = new string[2, 5];
+
 // String.Empty
 // table [0,0] table [0,1] table [0,2] table [0,3] table [0,4]
 // table [1,0] table [1,1] table [1,2] table [0,3] table [1,4]
@@ -55,9 +57,9 @@ newMatrix[2, 3] = 1;
 //            Console.Write($"{matr[i, j]} ");
 //        }
 //       Console.WriteLine();
-//     }      
+//     }
 // }
- 
+
 //  void FillArray(int[,] matr)
 // {
 //     for (int i = 0; i < matr.GetLength(0); i++)
@@ -170,8 +172,10 @@ double Factorial3(int n)
 {
     // 1! = 1
     // 0! = 1
-    if(n == 1) return 1;
-    else return n * Factorial3(n-1);
+    if (n == 1)
+        return 1;
+    else
+        return n * Factorial3(n - 1);
 }
 for (int i = 1; i < 40; i++)
 {
@@ -180,8 +184,10 @@ for (int i = 1; i < 40; i++)
 
 double Fibonacci(int n) // Числа Фибоначи.
 {
-    if(n == 1 || n == 2) return 1;
-    else return Fibonacci(n-1) + Fibonacci(n-2);
+    if (n == 1 || n == 2)
+        return 1;
+    else
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 for (int i = 1; i < 50; i++)
 {
