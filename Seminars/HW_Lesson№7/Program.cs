@@ -55,7 +55,7 @@ using System;
 //     }
 // }
 // void PrintArrayMethod(int[,] arr)
-// {
+//    { 
 //     for (int i = 0; i < arr.GetLength(0); i++)
 //     {
 //         for (int j = 0; j < arr.GetLength(1); j++)
@@ -87,7 +87,7 @@ using System;
 // PrintArrayMethod(array);
 // SearchNumber(array);
 
-// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов 
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов
 // в каждом столбце.
 
 // Например, задан массив:
@@ -123,11 +123,11 @@ using System;
 //     int rows = arr.GetLength(0);
 //     int cols = arr.GetLength(1);
 
-//     for (int j = 0; j < cols; j++) 
+//     for (int j = 0; j < cols; j++)
 //      {
 //       double sum = 0;
 
-//      for (int i = 0; i < rows; i++) 
+//      for (int i = 0; i < rows; i++)
 //      {
 //         sum += arr[i, j];
 //      }
